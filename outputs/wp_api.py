@@ -16,7 +16,7 @@ class WordPressAPIOutput:
 
         headers = {
             'Content-Type': 'application/json',
-            # 'Authorization': f'Bearer {self.api_secret}' # Optional: if we add secret token validation later
+            'x-crt-token': 'crt_scraper_super_secret_2026'
         }
 
         try:
