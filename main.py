@@ -1,5 +1,4 @@
 import logging
-from core.browser import StealthBrowser
 from agencies.adobe_scraper import AdobeScraper
 from agencies.vamos_scraper import VamosScraper
 from outputs.wp_api import WordPressAPIOutput
@@ -23,11 +22,11 @@ def main():
     all_scraped_data = []
     
     logger.info("Starting extraction from Adobe...")
-    adobe = AdobeScraper(StealthBrowser(headless=True))
+    adobe = AdobeScraper(None)
     all_scraped_data.extend(adobe.scrape())
     
     logger.info("Starting extraction from Vamos...")
-    vamos = VamosScraper(StealthBrowser(headless=True))
+    vamos = VamosScraper(None)
     all_scraped_data.extend(vamos.scrape())
     
     # 3. Output Data
