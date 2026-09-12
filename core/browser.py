@@ -1,7 +1,7 @@
 import time
 import random
 from playwright.sync_api import sync_playwright
-from playwright_stealth import stealth
+from playwright_stealth import stealth_sync
 
 class StealthBrowser:
     def __init__(self, headless=True):
@@ -30,7 +30,7 @@ class StealthBrowser:
         )
         self.page = self.context.new_page()
         
-        # Apply stealth plugin to mask Playwright
+        # Apply stealth_sync plugin to mask Playwright
         stealth(self.page)
         return self.page
 
