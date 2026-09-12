@@ -4,7 +4,6 @@ import asyncio
 from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
-from core.browser import get_browser_context
 
 logger = logging.getLogger(__name__)
 
@@ -115,3 +114,4 @@ class VamosScraper:
 
     def scrape(self):
         return asyncio.run(fetch_vamos_data(self.start_date, self.end_date, self.pickup, self.dropoff))
+
