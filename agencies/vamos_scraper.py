@@ -6,14 +6,14 @@ from playwright.sync_api import sync_playwright
 
 logger = logging.getLogger(__name__)
 
-class VamosScraper:
+class AdobeScraper:
     def __init__(self, browser_manager=None, start_date=None, end_date=None):
         self.browser_manager = browser_manager
         self.start_date = start_date
         self.end_date = end_date
 
     def scrape(self):
-        logger.info("Starting scrape for Vamos Rent-A-Car")
+        logger.info("Starting scrape for Adobe Rent a Car")
         results = []
 
         try:
@@ -29,22 +29,22 @@ class VamosScraper:
                 except ImportError:
                     logger.warning("playwright_stealth not found, proceeding without it.")
 
-                logger.info("Navigating to Vamos Rent a Car...")
-                page.goto("https://vamosrentacar.com/", timeout=60000)
+                logger.info("Navigating to Adobe Rent a Car...")
+                page.goto("https://www.adobecar.com/", timeout=60000)
                 page.wait_for_load_state("networkidle")
                 
                 # Dump HTML to log so we can analyze it if it fails
                 html_content = page.content()
-                logger.info(f"Loaded Vamos homepage. HTML size: {len(html_content)} bytes")
+                logger.info(f"Loaded Adobe homepage. HTML size: {len(html_content)} bytes")
                 # write to file for GitHub Actions to pick up if configured
-                with open("vamos_debug.html", "w", encoding="utf-8") as f:
+                with open("adobe_debug.html", "w", encoding="utf-8") as f:
                     f.write(html_content)
 
                 # TODO: Implement actual interaction logic once we have the DOM
-                logger.warning("Vamos DOM interaction not yet implemented. Please review vamos_debug.html in CI artifacts.")
+                logger.warning("Adobe DOM interaction not yet implemented. Please review adobe_debug.html in CI artifacts.")
 
                 browser.close()
         except Exception as e:
-            logger.error(f"Error scraping Vamos: {e}")
+            logger.error(f"Error scraping Adobe: {e}")
 
         return results
