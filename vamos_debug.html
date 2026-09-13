@@ -1,0 +1,822 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">    
+    <title>Vamos Rent-A-Car  | Choose Your Vehicle</title>
+    <meta name="description" content="vamos restacar desc.">
+    <meta name="keywords" content="vamos, rentacar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://reservations.vamosrentacar.com/publica/L2/css/styles.css?v=210256">
+        
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://reservations.vamosrentacar.com/publica/L2/images/favicon_nlog.png">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>-->
+    <!--<script src="https://reservations.vamosrentacar.com/publica/js/G-Hmodules.js" type="text/javascript"></script>-->
+    <!--<script src="https://reservations.vamosrentacar.com/publica/js/K-Pmodules.js" type="text/javascript"></script>-->
+        
+    <link rel="stylesheet" href="https://reservations.vamosrentacar.com/publica/jquery-ui-1.12.1.custom/jquery-ui.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://reservations.vamosrentacar.com/publica/css/fonts/font-awesome/css/font-awesome.min.css">
+    
+    <!--<script type="text/javascript" src="https://reservations.vamosrentacar.com/publica/js/searchAddins.js?210256"></script>-->    
+    
+    <!--<script src="https://reservations.vamosrentacar.com/Language/lang.en.js" type="text/javascript"></script>-->    
+    
+     
+        
+    <!-- Hotjar Tracking Code for https://reservations.vamosrentacar.com/search/init/vamos -->
+    <!--<script type="text/javascript">
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2560465,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>-->
+    
+    <!--<script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="wVGIS5Ut8w3rfOfSlWiN0MYbHwGKx2dJ";analytics.SNIPPET_VERSION="4.13.2";
+      analytics.load("wVGIS5Ut8w3rfOfSlWiN0MYbHwGKx2dJ");
+      analytics.page();
+      }}();
+    </script>-->    
+    
+        
+    <!--<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>-->
+    <!--<script type="text/javascript">window.__ecomFlags = window.__ecomFlags || {};</script>-->
+    
+    <!-- Google Tag Manager -->
+    <!--<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGL2G8H');</script>-->
+    <!-- End Google Tag Manager -->
+    
+    <!--<script src="https://unpkg.com/@popperjs/core@2" type="text/javascript"></script>-->
+    <!--<script src="https://unpkg.com/tippy.js@6" type="text/javascript"></script>-->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css">
+    
+    <!--<script type="text/javascript">    
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            
+            tippy('[data-tippy-content]', {
+                theme: 'default',
+                allowHTML: true,                
+                maxWidth: 700
+            });            
+            
+        });    
+    </script>-->
+  <link rel="preload" as="script" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/L2/js/index.js?v=m1"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/L2/js/owl.carousel.min.js"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/L2/js/bootstrap.min.js"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/L2/js/jquery.min.js"><link rel="preload" as="script" href="https://unpkg.com/tippy.js@6"><link rel="preload" as="script" href="https://unpkg.com/@popperjs/core@2"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/Language/lang.en.js"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/js/searchAddins.js?210256"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/js/K-Pmodules.js"><link rel="preload" as="script" href="https://reservations.vamosrentacar.com/publica/js/G-Hmodules.js"><link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></head>
+  <body>
+      
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGL2G8H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --> 
+    
+                  
+        <div class="main-loader" style="background-image: url('https://reservations.vamosrentacar.com/publica/L2/images/loaders/11.gif');"></div>
+            <header>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="row">
+              <div class="logo-wraper col-6 col-md-6 col-lg-5 d-flex align-items-center justify-content-end pr-4">
+                <figure class="w-100">
+                    <a href="https://reservations.vamosrentacar.com/Search/Init/Vamos">
+                        <img class="logo" src="https://reservations.vamosrentacar.com/publica/L2/images/nlogo.svg" alt="">
+                    </a>
+                    
+                                        
+                                            <div style="float:left; width: 100%; font-size: 13px; display:none;">
+                            <a href="https://reservations.vamosrentacar.com/Search/Init/Vamos?smm=rq" style="margin-top: 6px; float: left; margin-left: 4px;">
+                                Reset SMM-BCP
+                            </a>
+                        </div>
+                     
+                    
+                     
+                </figure>                
+              </div>
+              <div class="align-items-center col-6 col-lg-7 col-md-6 d-flex justify-content-lg-start justify-content-md-center pl-4">
+                <div class="logo-alt text-left">
+                  <p>More Smiles,</p>
+                  <p>Less Hassles</p>
+                  <p>No Hidden Fees!
+                                        <label style="font-size: 12px;margin-left: 5px;font-weight: bolder; display: none;">
+                        <a style="color: red;" title="reset" href="https://reservations.vamosrentacar.com/Search/Init/Vamos?rmodel=reset">DM</a>
+                      </label>
+                                        
+                                        <label style="font-size: 12px;margin-left: 5px;font-weight: bolder; display:none;">
+                        <a style="color: #b95f29;" title="reset" href="https://reservations.vamosrentacar.com/Search/Init/Vamos?rdifull=reset">_DF</a>
+                      </label>
+                                                              
+                  </p>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="progress-bar-wrapper">
+              <div class="progress">
+                                  <div class="progress-bar select-car">
+                  <div class="ball"></div>
+                </div>
+              </div>
+              <div class="steps-wrapper row">
+                <div class="col-md-12">
+                  <ul class="d-flex justify-content-around steps">
+                    <li><p class="step">Search for a Car Rental</p></li>
+                      <li><p class="step">Select a Car</p></li>
+                      <li><p class="step">Select Insurance and Service</p></li>
+                      <li><p class="step">Reserve</p></li>
+                      <li><p class="step">Order Complete</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+            <div class="d-flex justify-content-end rent-schedule-container">
+                  <div class="rent-schedule" style="">
+                      <div class="d-flex justify-content-around w-100" style="">
+                         
+
+                            <p>Pick Up At :<span> San José Airport / Oct 02, 2026 06 00 am</span></p>
+                            <p>Return At :<span> San José Airport / Oct 09, 2026 06 00 am</span></p>
+                            <p>Rental Period :<span> 7 days</span></p>
+                                              </div>
+                  </div>
+              </div>
+      </div>
+    </header>
+    
+    <style>        
+        .smm_box_content{
+            width: 90%; 
+            margin-left: 10%; 
+            float: left;
+            margin-bottom: 8px;
+        }
+        
+        .smm_box_short{
+            float:left; 
+            width: 25%; 
+            text-align: right; 
+            color: #000;
+        }
+        
+        .smm_box_value{
+            float:left; 
+            width: 75%;
+        }
+        
+        .smm_box_content_noavail{
+            opacity: 0.4;
+        }
+    </style>
+        
+    <main>
+      <section id="pickup-schedule" class="">
+        <div class="container">
+          <form class="calendar" id="frmSearchAvail" action="https://reservations.vamosrentacar.com/Search/StepSearch" method="post" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return valSearchParams();">    
+            <div class="form-row row">
+             <div class="col-lg-10">
+             <div class="form-row d-flex align-items-center">
+              <div id="pickLocation" class="form-group col-12 col-lg-6">
+                <select class="form-control " name="pick_up_at" id="pick_up_at" placeholder="Choose Pick-up Location">
+                    <option value="-1">Select Pick Up Location...</option>
+                                                       
+                     <option value="1" selected="">
+                      San Jose Airport, San Jose, Costa Rica - SJO                     </option>
+                                                        
+                     <option value="2">
+                      Liberia Airport, Guanacaste, Costa Rica - LIR                     </option>
+                                                                             
+                </select>                                    
+              </div>
+              <div id="pickDateContent" class="form-group col-6 col-lg-4">
+                <label for="pickDate" class="w-100 m-0">
+                 <div class="input-group">
+                  <input type="text" class="form-control calendar" id="pickup_date" name="pickup_date" placeholder="Pick-up Date" value="Fri, 02 October, 2026">
+                  <div class="input-group-append">
+                      <div class="input-group-text" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowAvailCalendar('pickup_date');">
+                        <svg class="svg-inline--fa fa-calendar-alt fa-w-14 icon-append" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg><!-- <i class="icon-append fa fa-calendar-alt"></i> Font Awesome fontawesome.com --></div>
+                  </div>
+                </div>
+               </label>
+              </div>
+              <div id="timePick" class="form-group col-6 col-lg-2">
+                  <select class="form-control" name="pickup_time" id="pickup_time" onchange="if (!window.__cfRLUnblockHandlers) return false; setpickuptime('P')" style="font-size: 15px;">
+                    <option value="-1">Pickup Time</option>
+                    <option value="05_00_am">05:00 AM</option><option value="05_30_am">05:30 AM</option><option value="06_00_am" selected="">06:00 AM</option><option value="06_30_am">06:30 AM</option><option value="07_00_am">07:00 AM</option><option value="07_30_am">07:30 AM</option><option value="08_00_am">08:00 AM</option><option value="08_30_am">08:30 AM</option><option value="09_00_am">09:00 AM</option><option value="09_30_am">09:30 AM</option><option value="10_00_am">10:00 AM</option><option value="10_30_am">10:30 AM</option><option value="11_00_am">11:00 AM</option><option value="11_30_am">11:30 AM</option><option value="12_00_pm">12:00 PM</option><option value="12_30_pm">12:30 PM</option><option value="01_00_pm">01:00 PM</option><option value="01_30_pm">01:30 PM</option><option value="02_00_pm">02:00 PM</option><option value="02_30_pm">02:30 PM</option><option value="03_00_pm">03:00 PM</option><option value="03_30_pm">03:30 PM</option><option value="04_00_pm">04:00 PM</option><option value="04_30_pm">04:30 PM</option><option value="05_00_pm">05:00 PM</option><option value="05_30_pm">05:30 PM</option><option value="06_00_pm">06:00 PM</option><option value="06_30_pm">06:30 PM</option><option value="07_00_pm">07:00 PM</option><option value="07_30_pm">07:30 PM</option><option value="08_00_pm">08:00 PM</option><option value="08_30_pm">08:30 PM</option><option value="09_00_pm">09:00 PM</option><option value="09_30_pm">09:30 PM</option><option value="10_00_pm">10:00 PM</option><option value="10_30_pm">10:30 PM</option><option value="11_00_pm">11:00 PM</option>                                                                                                                
+                </select>                                  
+              </div>
+            </div>
+                <div id="dropOffContent" class="form-row mt-2" style="display:flex;">
+                    <div class="form-group col-12 col-lg-6">
+                      <select class="form-control" name="return_at" id="return_at" placeholder="Choose Return Location">
+                          <option value="-1">Select Return Location...</option>
+                                                    <option value="1" selected="">
+                            San Jose Airport, San Jose, Costa Rica - SJO                              
+                          </option>
+                                                   <option value="2">
+                            Liberia Airport, Guanacaste, Costa Rica - LIR                              
+                          </option>
+                                                                                     
+                      </select>                                      
+                    </div>
+                    <div class="form-group col-6 col-lg-4">
+                      <label for="dropOffDate" class="w-100 m-0">
+                      <div class="input-group">
+                        <input type="text" class="form-control calendar" id="dropoff_date" name="dropoff_date" maxlength="10" placeholder="Drop-off Date" value="Fri, 09 October, 2026">
+                        <div class="input-group-append">
+                          <div class="input-group-text" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowAvailCalendar('dropoff_date');">
+                            <svg class="svg-inline--fa fa-calendar-alt fa-w-14 icon-append" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg><!-- <i class="icon-append fa fa-calendar-alt"></i> Font Awesome fontawesome.com --></div>
+                        </div>
+                      </div>
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-lg-2">
+                      <select name="dropoff_time" id="dropoff_time" class="form-control" onchange="if (!window.__cfRLUnblockHandlers) return false; setpickuptime('D')" style="font-size: 15px;">
+                          <option value="-1">Return Time</option>
+                          <option value="05_00_am">05:00 AM</option><option value="05_30_am">05:30 AM</option><option value="06_00_am" selected="">06:00 AM</option><option value="06_30_am">06:30 AM</option><option value="07_00_am">07:00 AM</option><option value="07_30_am">07:30 AM</option><option value="08_00_am">08:00 AM</option><option value="08_30_am">08:30 AM</option><option value="09_00_am">09:00 AM</option><option value="09_30_am">09:30 AM</option><option value="10_00_am">10:00 AM</option><option value="10_30_am">10:30 AM</option><option value="11_00_am">11:00 AM</option><option value="11_30_am">11:30 AM</option><option value="12_00_pm">12:00 PM</option><option value="12_30_pm">12:30 PM</option><option value="01_00_pm">01:00 PM</option><option value="01_30_pm">01:30 PM</option><option value="02_00_pm">02:00 PM</option><option value="02_30_pm">02:30 PM</option><option value="03_00_pm">03:00 PM</option><option value="03_30_pm">03:30 PM</option><option value="04_00_pm">04:00 PM</option><option value="04_30_pm">04:30 PM</option><option value="05_00_pm">05:00 PM</option><option value="05_30_pm">05:30 PM</option><option value="06_00_pm">06:00 PM</option><option value="06_30_pm">06:30 PM</option><option value="07_00_pm">07:00 PM</option><option value="07_30_pm">07:30 PM</option><option value="08_00_pm">08:00 PM</option><option value="08_30_pm">08:30 PM</option><option value="09_00_pm">09:00 PM</option><option value="09_30_pm">09:30 PM</option><option value="10_00_pm">10:00 PM</option><option value="10_30_pm">10:30 PM</option><option value="11_00_pm">11:00 PM</option>                                                                                                                
+                      </select>                                  
+                    </div>
+                </div>
+                </div>
+                
+              <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                                          
+                <button type="submit" class="btn btn-primary w-100" style=" padding-right:25px; padding-left:25px;">Search again</button> 
+              </div>
+              </div>
+              <input id="PropertyCode" name="PropertyCode" type="hidden" value="VAMOS">                    
+              <input id="vl21" name="vl21" type="hidden" value="T">
+          </form>
+            <input type="hidden" id="fireme_url" name="fireme_url" value="">
+            <input type="hidden" id="cat_gen_code_par" value="">
+            <input type="hidden" id="rva_total_rent_dias" value="7">
+        </div>
+      </section>
+      <section id="Vehicles">
+          
+                  
+          
+        <div class="container">
+            <div class="row" style="display:none;">
+                <div class="col-md-12 col-lg-6">
+                  <div class="special-offer">
+                    <div class="row">
+                      <div class="col-md-6 special-offer-car">
+                        <a href="step3.html">
+                          <img src="https://reservations.vamosrentacar.com/publica/L2/images/4x4.png" alt="">
+                        </a>                    
+                      </div>
+                      <div class="col-md-6 text-center special-offer-info">
+                        <h2>Special Offer</h2>
+                        <p>Premium SUV PFFAR 
+                          <br>
+                          Mitsubishi Montero/ToyotaPrado4x4
+                          <br>
+                          Automatic
+                        </p>
+                        <div class="price yellow-price">
+                          <p>Price/Day from</p>
+                          <span>$51.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-md-5 col-lg-6"></div>
+          </div>
+        </div>
+                  
+                          
+            <div class="container vehicules-grid">
+              <div class="row">              
+                              
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column " data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="EBAR" data-ga-index="2" style="">
+                                <a href="https://reservations.vamosrentacar.com/Search/finalStep/7aLcl5PP2euh2Jabo5ft5qPD0Zyd4aPgkZWal6miqJKTm5eooqKTmZyVqamhk5icnaijqJCUmpaooKjAk5vE2t2hkZnKlanP086SubTHtQ==/false/laddons:true" title=" ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/EBAR.png" style="width:175px;">
+                                      <p class="text-center ">Economy Ebar                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  " data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$13.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                  
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column " data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="DFAR" data-ga-index="2" style="">
+                                <a href="https://reservations.vamosrentacar.com/Search/finalStep/7aLcl5PP2euh2Jabo5ft5qPD0Zyd4aPgkZWal6miqJKTm5eooqKTmZyVqamhk5idnKikp5CUmpaooKjAk5vE2t2hkZnKlanP086SubTHtQ==/false/laddons:true" title=" ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/DFAR_Car.png" style="width:175px;">
+                                      <p class="text-center ">Compact Elite SUV 4x4                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  " data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$18.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                  
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column " data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="IFAR" data-ga-index="2" style="">
+                                <a href="https://reservations.vamosrentacar.com/Search/finalStep/7aLcl5PP2euh2Jabo5ft5qPD0Zyd4aPgkZWal6miqJKTm5eooqKTmZyVqamhk5ibnKiipJCUmpaooKjAk5vE2t2hkZnKlanP086SubTHtQ==/false/laddons:true" title=" ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/IFXR2.png" style="width:175px;">
+                                      <p class="text-center ">Intermediate SUV IFAR 4X4                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  " data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$20.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                  
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column " data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="FFAR" data-ga-index="2" style="">
+                                <a href="https://reservations.vamosrentacar.com/Search/finalStep/7aLcl5PP2euh2Jabo5ft5qPD0Zyd4aPgkZWal6miqJKTm5eooqKTmZyVqamhk5iclqiiqJCUmpaooKjAk5vE2t2hkZnKlanP086SubTHtQ==/false/laddons:true" title=" ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/FFAR.png" style="width:175px;">
+                                      <p class="text-center ">Full Size SUV FFAR 4X4                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  " data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$35.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                  
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column " data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="PFAR" data-ga-index="2" style="">
+                                <a href="https://reservations.vamosrentacar.com/Search/finalStep/7aLcl5PP2euh2Jabo5ft5qPD0Zyd4aPgkZWal6miqJKTm5eooqKTmZyVqamhk5icmKiiqpCUmpaooKjAk5vE2t2hkZnKlanP086SubTHtQ==/false/laddons:true" title=" ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/PFAR.png" style="width:175px;">
+                                      <p class="text-center ">Premium SUV PFAR 4X4                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  " data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$56.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                  
+
+                            <div class="col-12 col-md-3 vehicule d-flex justify-content-center align-items-center flex-column carnotavailable" data-outofstock="Notify Me when available" data-outlink="request.html" data-ga-sku="UFAR" data-ga-index="2" style="">
+                                <a href="javascript:void(0);" title="NOT AVAILABLE ">
+                                    <img src="https://reservations.vamosrentacar.com/publica/imagenes/Trailblazer-SOLD-OUT.png" style="width:175px;">
+                                      <p class="text-center not-avail-sub-box">Premium Elite UFAR                                        <br>
+                                                                                <br>
+                                        Automatic Transmission                                    </p>
+                                        
+                                       
+                                        
+                                                                            <div class="price-box-wrapper">                                            
+                                            <div class="price-box  not-avail-sub-box" data-booster="no">                                                
+                                                                                                
+                                                <div class="price-display">
+                                                    <div class="left-label ">Price<br>Per Day<br>From</div>
+                                                                                                                    
+                                                        <div class="right-price">$58.95</div>
+                                                                                                    </div>                                                
+                                            </div>
+                                                                                        
+                                        </div>
+                                     
+                                        
+                                      
+                                                                                                                                                            
+                                                                             
+                                                                                
+                                                                            
+                                </a>                                                                
+                            </div>
+                                   
+              </div>
+            </div>
+                  
+              
+        <input type="hidden" id="_min_los_override" value="1">       
+        <input type="hidden" id="ga_list_result" value="[{&quot;sku&quot;:&quot;EBAR&quot;,&quot;name&quot;:&quot;Economy&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Economy Ebar&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;13.95&quot;,&quot;status&quot;:&quot;InStock&quot;},{&quot;sku&quot;:&quot;DFAR&quot;,&quot;name&quot;:&quot;Compact Elite SUV 4x4&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Compact Elite SUV 4x4&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;18.95&quot;,&quot;status&quot;:&quot;InStock&quot;},{&quot;sku&quot;:&quot;IFAR&quot;,&quot;name&quot;:&quot;Intermediate SUV 4x4&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Intermediate SUV IFAR 4X4&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;20.95&quot;,&quot;status&quot;:&quot;InStock&quot;},{&quot;sku&quot;:&quot;FFAR&quot;,&quot;name&quot;:&quot;Full Fize SUV 4x4&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Full Size SUV FFAR 4X4&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;35.95&quot;,&quot;status&quot;:&quot;InStock&quot;},{&quot;sku&quot;:&quot;PFAR&quot;,&quot;name&quot;:&quot;Premium SUV 4x4 7 passenger&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Premium SUV PFAR 4X4&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;56.95&quot;,&quot;status&quot;:&quot;InStock&quot;},{&quot;sku&quot;:&quot;UFAR&quot;,&quot;name&quot;:&quot;Chevrolet Trailblazer&quot;,&quot;brand&quot;:&quot;Vamos Rent-A-Car&quot;,&quot;category&quot;:&quot;Premium Elite UFAR&quot;,&quot;variant&quot;:&quot;Automatic&quot;,&quot;pricePerDay&quot;:&quot;58.95&quot;,&quot;status&quot;:&quot;OutOfStock&quot;}]">        
+        <input type="hidden" id="ga_promo_list" value="[]">                                 
+      </section>
+    </main>
+    <footer>
+        <div class="container footer-foo">
+          <div class="row">
+            <div class="col-md-4 text-center align-items-center d-flex">
+              <p>Vehicle Make &amp; Model are Representative for Each Category</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#">Terms of Service</a>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#">Copyright 2007 - 2021 Vamos Rent-A-Car. All Rights Reserved.</a>
+            </div>
+          </div>
+        </div>
+                  <!--<script src="https://reservations.vamosrentacar.com/publica/L2/js/jquery.min.js" type="text/javascript"></script>-->
+          <!--<script src="https://reservations.vamosrentacar.com/publica/L2/js/bootstrap.min.js" type="text/javascript"></script>-->
+          <!--<script src="https://reservations.vamosrentacar.com/publica/L2/js/owl.carousel.min.js" type="text/javascript"></script>-->    
+          <!--<script src="https://reservations.vamosrentacar.com/publica/L2/js/index.js?v=m1" type="text/javascript"></script>-->
+          <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>-->  
+                
+        <!--<script type="text/javascript">
+            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+            vgo('setAccount', '800518561');
+            vgo('setTrackByDefault', true);
+
+            vgo('process');
+        </script>--> 
+
+<!--<script type="text/javascript">
+  const use_interval = true;
+
+    function ToggleOffer() {
+    const boosterBox = document.querySelector('[data-booster="yes"]');
+    if (!boosterBox) return;
+
+    const booster = boosterBox.querySelector('.price-booster');
+    const price = boosterBox.querySelector('.price-display');
+    const boosterInner = booster.querySelector('.booster-inner');
+    const $badge = $(boosterBox).closest('.price-box-wrapper').find('.limited-badge-floated');
+    
+    const boosterBottomText = boosterInner.querySelector('.booster-text-bottom');
+    let showingBooster = false;
+
+    // Reset state
+    booster.classList.remove('visible');
+    price.classList.add('visible');
+    boosterInner?.classList.remove('show-extra');
+    boosterBottomText?.classList.remove('visible-text');
+    $badge.removeClass('show-badge');
+
+    const toggleFn = () => {
+      if (!showingBooster) {
+        // Step 1: show main booster
+        price.classList.remove('visible');
+        booster.classList.add('visible');
+        showingBooster = true;
+
+        // Step 2: after 2s, show bottom text
+        setTimeout(() => {
+          boosterInner?.classList.add('show-extra');
+          boosterBottomText?.classList.add('visible-text');
+        }, 2000);                      
+      } else {
+        // Revert to price and hide everything
+        boosterBox.classList.add('price-box-sborder');
+        booster.classList.remove('visible');
+        boosterInner?.classList.remove('show-extra');
+        boosterBottomText?.classList.remove('visible-text');                
+        price.classList.add('visible');
+        $badge.addClass('show-badge');
+        showingBooster = false;
+      }
+    };
+
+    if (use_interval) {
+      window._boosterInterval = setInterval(toggleFn, 6000);
+    } else {
+      toggleFn();
+      setTimeout(toggleFn, 3000);
+    }
+  }
+
+  // Run after 1s
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      ToggleOffer();
+    }, 1000);
+  });
+    
+            $( document ).ready(function() {
+            
+            console.log( "ready and waiting for search_fired !" );
+            
+            const pickup_location =  $('#pick_up_at option:selected').text().trim();
+            const return_location =  $('#return_at option:selected').text().trim(); 
+            
+            const pickup_time = $('#pickup_time').val();
+            const return_time = $('#dropoff_time').val();
+            
+            const rva_total_rent_dias = $("#rva_total_rent_dias").val();
+
+            if (!window.__ecomFlags.search_fired) {
+                window.__ecomFlags.search_fired = true;
+
+                dataLayer.push({
+                    event: 'search',
+                    search_term: 'fleet',
+                    start_date: '2026-10-02',
+                    end_date: '2026-10-09',
+                    pickup_location: pickup_location,
+                    return_location: return_location,
+                    pickup_time: pickup_time,
+                    return_time: return_time,
+                    rental_days: rva_total_rent_dias
+                });
+                  
+                //console.log( "dl was pushed and  search_fired !" );                  
+            }
+            
+            console.log( "ready and waiting for --> view_item_list_fired !" );
+            
+            if (!window.__ecomFlags) window.__ecomFlags = {};
+
+            if (!window.__ecomFlags.view_item_list_fired) {
+                const hidden = document.getElementById("ga_list_result");
+                if (hidden) {
+                    const results = JSON.parse(hidden.value || "[]");
+                    window.__ecomFlags.view_item_list_fired = true;
+
+                    dataLayer.push({
+                        event: 'view_item_list',
+                        ecommerce: {
+                            items: results.map((car, i) => ({
+                                item_id: car.sku,
+                                item_name: car.name,
+                                item_brand: car.brand,
+                                item_category: car.category,
+                                item_variant: car.variant,
+                                price: Number(car.pricePerDay),
+                                quantity: 1,
+                                item_availability: car.status,
+                                item_list_name: 'Search Results',
+                                item_list_id: 'search_results_v1',
+                                index: i + 1                                
+                            }))
+                        },
+                        start_date: '2026-10-02',
+                        end_date: '2026-10-09',
+                        pickup_location: pickup_location,
+                        return_location: return_location,
+                        pickup_time: pickup_time,
+                        return_time: return_time,
+                        rental_days: rva_total_rent_dias
+                    });
+
+                    //console.log('Car item for GA4:', results); // 👈 per-item log
+                    //console.log("dl was pushed and view_item_list_fired!");
+                }
+            }
+            
+            if (!window.__ecomFlags.view_promotion_fired) {
+                const promoHidden = document.getElementById("ga_promo_list");
+
+                if (promoHidden) {
+                    const promoResults = JSON.parse(promoHidden.value || "[]");
+                    if (promoResults.length > 0) {
+                        window.__ecomFlags.view_promotion_fired = true;
+
+                        dataLayer.push({
+                            event: "view_promotion",
+                            ecommerce: {
+                                items: promoResults.map(promo => ({
+                                    promotion_id: promo.promotion_id,
+                                    promotion_name: promo.promotion_name,
+                                    creative_name: promo.creative_name,
+                                    creative_slot: promo.creative_slot
+                                }))
+                            }
+                        });
+
+                        console.log("✅ GA4 promotion event fired", promoResults);
+                    }
+                }
+            }            
+        }); 
+        
+        
+        $( document ).ready(function() {
+                
+            (function(){
+              // parse JSON safely
+              function parseHiddenJson(id){
+                const el = document.getElementById(id);
+                if (!el) return [];
+                try {
+                  return JSON.parse(el.value || "[]");
+                } catch(e){
+                  console.error("Invalid JSON in", id, e);
+                  return [];
+                }
+              }
+
+              // Car items and promo items arrays (from PHP hidden inputs)
+              const GA_CAR_ITEMS = parseHiddenJson("ga_list_result"); // array of cars
+              const GA_PROMO_ITEMS = parseHiddenJson("ga_promo_list"); // array of promotions
+
+              // helper to find car by sku
+              function findCarBySku(sku){
+                return GA_CAR_ITEMS.find(c => String(c.sku) === String(sku)) || null;
+              }
+
+              // helper to find promo by id
+              function findPromoById(pid){
+                return GA_PROMO_ITEMS.find(p => String(p.promotion_id) === String(pid)) || null;
+              }
+
+              // MARKETING example: selecting a car item (on click)
+              window.onCarClick = function(car, positionIndex){
+                // car is an object { sku, name, brand, ... } OR you can pass the DOM element and we'll resolve
+                let item;
+                if (typeof car === 'string' || typeof car === 'number') {
+                  item = findCarBySku(car);
+                } else {
+                  item = car;
+                }
+                if (!item) {
+                  console.warn("onCarClick: car not found", car);
+                  return;
+                }
+
+                dataLayer.push({
+                  event: 'select_item',
+                  ecommerce: {
+                    items: [{
+                      item_id: item.sku,
+                      item_name: item.name,
+                      item_brand: item.brand,
+                      item_category: item.category,
+                      item_variant: item.variant,
+                      price: Number(item.pricePerDay),
+                      quantity: 1,
+                      item_availability: item.status,
+                      item_list_name: 'Search Results',
+                      item_list_id: 'search_results_v1',
+                      index: Number(positionIndex) || 1
+                    }]
+                  }
+                });
+
+                console.log("GA4 select_item pushed", item, positionIndex);
+              };
+
+              // PROMO selection (user clicked a booster)
+              window.onPromoClick = function(promo, positionIndex){
+                let p;
+                if (typeof promo === 'string') {
+                  p = findPromoById(promo);
+                } else {
+                  p = promo;
+                }
+                if (!p) {
+                  console.warn("onPromoClick: promo not found", promo);
+                  return;
+                }
+
+                dataLayer.push({
+                  event: 'select_promotion',
+                  ecommerce: {
+                    items: [{
+                      promotion_id: p.promotion_id,
+                      promotion_name: p.promotion_name,
+                      creative_name: p.creative_name || '',
+                      creative_slot: p.creative_slot || '',
+                      index: Number(positionIndex) || 1
+                    }]
+                  }
+                });
+
+                console.log("GA4 select_promotion pushed", p, positionIndex);
+              };
+
+              // AUTO-WIRE: attach listeners to car elements and boosters if data attributes exist
+              // Car click binding: elements with data-ga-sku (e.g. the 'Choose This Rate' button / wrapper)
+              document.addEventListener('click', function(e){
+                const carEl = e.target.closest('[data-ga-sku]');
+                if (carEl) {
+                  const sku = carEl.getAttribute('data-ga-sku');
+                  const idx = carEl.getAttribute('data-ga-index') || undefined;
+                  try { onCarClick(sku, idx); } catch(err){ console.error(err); }
+                }
+                const promoEl = e.target.closest('[data-promotion-id]');
+                if (promoEl) {
+                  const pid = promoEl.getAttribute('data-promotion-id');
+                  const idx = promoEl.getAttribute('data-promotion-index') || undefined;
+                  try { onPromoClick(pid, idx); } catch(err){ console.error(err); }
+                }
+              });
+
+              // If you prefer explicit wiring (instead of global click delegation), here's how to attach individually:
+              // Car elements example: elements with class .car-result and data-ga-sku attr:
+              document.querySelectorAll('.car-result[data-ga-sku]').forEach((el, i) => {
+                el.addEventListener('click', () => onCarClick(el.getAttribute('data-ga-sku'), i + 1));
+              });
+
+              // Promo elements example: elements with class .price-box and data-promotion-id attr:
+              document.querySelectorAll('.price-box[data-promotion-id]').forEach((el, i) => {
+                el.addEventListener('click', () => onPromoClick(el.getAttribute('data-promotion-id'), i + 1));
+              });
+
+            })();            
+        });                     
+            
+     
+        
+        
+    
+    </script>-->           
+        
+    </footer>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;d7f83318827b4978ac76583a767a5a25&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+</body></html>

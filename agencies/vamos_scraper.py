@@ -98,9 +98,9 @@ async def fetch_vamos_data(start_date, end_date, pickup, dropoff):
                 "currency": "USD",
                 "pricing": {
                     "base_rate_per_day": price,
-                    "mandatory_tpl_per_day": 0,
+                    "mandatory_tpl_per_day": 0,  # Will implement later if Vamos separates this
                     "agency_cdw_per_day": 0,
-                    "iva_percentage": 0.13
+                    "iva_percentage": 0.13       # Default Costa Rica IVA
                 }
             })
             

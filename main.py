@@ -19,14 +19,19 @@ def main():
     gdrive_output = GoogleDriveOutput(credentials_file='credentials.json', spreadsheet_name='CostaRicaTransit_ScrapedData')
     
     # 2. Extract Data from Agencies
+    from datetime import datetime, timedelta
+    now = datetime.now()
+    start_date = (now + timedelta(days=20)).strftime("%Y-%m-%d")
+    end_date = (now + timedelta(days=27)).strftime("%Y-%m-%d")
+
     all_scraped_data = []
     
-    logger.info("Starting extraction from Adobe...")
-    adobe = AdobeScraper(None)
+    logger.info(f"Starting extraction from Adobe for dates: {start_date} to {end_date}...")
+    adobe = AdobeScraper(None, start_date=start_date, end_date=end_date)
     all_scraped_data.extend(adobe.scrape())
     
-    logger.info("Starting extraction from Vamos...")
-    vamos = VamosScraper(None)
+    logger.info(f"Starting extraction from Vamos for dates: {start_date} to {end_date}...")
+    vamos = VamosScraper(None, start_date=start_date, end_date=end_date)
     all_scraped_data.extend(vamos.scrape())
     
     # 3. Output Data

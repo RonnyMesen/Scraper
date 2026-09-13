@@ -30,7 +30,7 @@ class StealthBrowser:
         )
         self.page = self.context.new_page()
         
-        # Apply stealth_sync plugin to mask Playwright
+        # Apply stealth plugin to mask Playwright
         stealth_sync(self.page)
         return self.page
 
