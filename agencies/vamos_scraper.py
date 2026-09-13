@@ -92,10 +92,16 @@ async def fetch_vamos_data(start_date, end_date, pickup, dropoff):
             price = float(price_text)
             
             vehicles.append({
-                "agency": "Vamos",
-                "name": name,
-                "price": price,
-                "currency": "USD"
+                "provider_id": "vamos_cr",
+                "category": "UNKNOWN",
+                "vehicle_model": name,
+                "currency": "USD",
+                "pricing": {
+                    "base_rate_per_day": price,
+                    "mandatory_tpl_per_day": 0,
+                    "agency_cdw_per_day": 0,
+                    "iva_percentage": 0.13
+                }
             })
             
         except Exception as e:
@@ -114,4 +120,3 @@ class VamosScraper:
 
     def scrape(self):
         return asyncio.run(fetch_vamos_data(self.start_date, self.end_date, self.pickup, self.dropoff))
-
